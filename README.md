@@ -96,40 +96,19 @@ Monitoring Viewer
 # 시스템 아키텍처
 
 ```mermaid
-flowchart LR
-    CAM["USB Camera / CCTV"]
+flowchart TD
+    A["카메라 입력"] --> B["Client 영상 수신"]
+    B --> C["YOLO 객체 탐지"]
+    C --> D["탐지 결과 생성"]
 
-    subgraph Client["AI Client"]
-        CAP["Camera Capture"]
-        AI["YOLO Inference"]
-        STATUS["Camera / Server / AI Status"]
-        SEND["Detection / Preview Data"]
+    D --> E["Server 전달"]
+    E --> F["이벤트 조건 확인"]
+    F --> G["이벤트 / 로그 저장"]
 
-        CAP --> AI
-        AI --> SEND
-        STATUS --- CAP
-    end
-
-    subgraph Server["Central Server"]
-        API["API / Network"]
-        DATA["Detection / Event Data"]
-        MANAGE["Client / Camera Management"]
-
-        API --> DATA
-        API --> MANAGE
-    end
-
-    subgraph Viewer["Monitoring Viewer"]
-        MON["Live Monitoring"]
-        GRID["Multi Camera View"]
-        EVENT["Event / Status View"]
-    end
-
-    CAM --> CAP
-    SEND --> API
-    API --> MON
-    MON --> GRID
-    DATA --> EVENT
+    E --> H["Viewer 데이터 전달"]
+    G --> I["이벤트 조회"]
+    H --> J["실시간 모니터링 화면"]
+    I --> J
 ```
 
 ---
