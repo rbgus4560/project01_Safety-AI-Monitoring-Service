@@ -1,0 +1,2 @@
+# Canonical server dependency list moved to the workspace root.
+-r ../requirements-server.txt

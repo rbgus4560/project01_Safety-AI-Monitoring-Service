@@ -1,0 +1,21 @@
+{
+  "settings_version": "0.0.6",
+  "datasets_dir": "C:\\Users\\user\\Desktop\\datasets",
+  "weights_dir": "C:\\Users\\user\\Desktop\\hiyoung_team_github\\weights",
+  "runs_dir": "C:\\Users\\user\\Desktop\\hiyoung_team_github\\runs",
+  "uuid": "ebfa11b0c118b2de4d09388a361c7d1f3fe93f7b388c3f7d45fd8a2ce614cf3e",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "hub": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": false
+}

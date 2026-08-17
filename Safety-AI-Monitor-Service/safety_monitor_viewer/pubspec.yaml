@@ -1,0 +1,26 @@
+name: safety_monitor_viewer
+description: Safety Monitor Viewer
+publish_to: "none"
+
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  desktop_multi_window: ^0.3.0
+  file_selector: ^1.1.0
+  http: ^1.6.0
+  media_kit: ^1.2.6
+  media_kit_video: ^2.0.1
+  media_kit_libs_video: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

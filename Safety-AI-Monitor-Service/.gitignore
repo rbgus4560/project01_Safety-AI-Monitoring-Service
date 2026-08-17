@@ -1,0 +1,84 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Workspace virtual environments
+.venv/
+.venv_*/
+.venv_incomplete_backup/
+venv/
+env/
+
+# Local logs / temp files
+*.log
+logs/
+.tmp/
+tmp/
+*.tmp
+
+# Runtime databases and generated backend data
+**/data/*.db
+**/data/*.db-*
+**/data/clips/
+**/data/source_previews/
+**/data/source_cache/
+**/data/uploaded_sources/
+**/data/ultralytics/
+**/runs/
+**/embedded_backend.pid
+
+# Local app settings
+safety_monitor_client/client_settings.json
+safety_monitor_viewer/server_config.json
+runtime_register_response.json
+
+# AI model/runtime artifacts
+*.engine
+*.engine.meta.json
+*.onnx
+*.weights
+
+# Generated local media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+**/build/
+
+# Local Flutter SDK copy at workspace root
+/flutter/
+
+# Windows build/tool cache archives
+*.7z
+*.zip
+
+# IDE / OS
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# Machine-specific client identity / auth token
+safety_monitor_client/client_identity.json
+
+# Generated event thumbnails
+**/data/event_thumbnails/
+
+# Flutter Windows ephemeral SDK artifacts
+**/windows/flutter/ephemeral/

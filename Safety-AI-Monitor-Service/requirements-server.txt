@@ -1,0 +1,20 @@
+# Safety Monitor central server runtime only
+# Python 3.12 recommended on Windows.
+
+fastapi==0.136.1
+starlette==1.0.0
+uvicorn==0.46.0
+anyio==4.13.0
+h11==0.16.0
+click==8.3.3
+colorama==0.4.6
+python-multipart==0.0.28
+pydantic==2.13.4
+pydantic_core==2.46.4
+annotated-types==0.7.0
+annotated-doc==0.0.4
+typing_extensions==4.15.0
+typing-inspection==0.4.2
+websockets==16.0
+numpy==2.4.4
+opencv-python==4.13.0.92
